@@ -29,7 +29,7 @@ option(ADVANCED_TYPES_INSTALL_LIBRARY "Whether to install the library or not"
 
 project(
   ADVANCED_TYPES
-  VERSION 1.0.0
+  VERSION 1.0.1
   DESCRIPTION "Common advanced types for safety and ease of use"
   HOMEPAGE_URL "https://github.com/vitimiti/advanced_types"
   LANGUAGES C CXX)

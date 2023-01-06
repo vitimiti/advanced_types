@@ -32,8 +32,18 @@
 namespace adv_t {
 class API_EXPORT error_t {
 public:
+  error_t() = delete;
+  constexpr explicit error_t(std::string_view const& message)
+      : _message(message), _code(-1) {}
+
   constexpr error_t(std::string_view const& message, std::int32_t code)
       : _message(message), _code(code) {}
+
+  error_t(error_t const&)                    = default;
+  error_t(error_t&&)                         = default;
+  auto operator=(error_t const&) -> error_t& = default;
+  auto operator=(error_t&&) -> error_t&      = default;
+  ~error_t()                                 = default;
 
   [[nodiscard]] constexpr auto message() const { return _message; }
   [[nodiscard]] constexpr auto code() const { return _code; }
