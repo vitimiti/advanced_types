@@ -49,7 +49,7 @@ target_precompile_headers(${PROJECT_NAME} INTERFACE <cstdint> <optional>
                           <string_view> <variant>)
 
 include(GNUInstallDirs)
-if(PREPROC_INSTALL_LIBRARY)
+if(ADVANCED_TYPES_INSTALL_LIBRARY)
   message(TRACE
           "Configuring installation system with prefix ${CMAKE_INSTALL_PREFIX}")
 
