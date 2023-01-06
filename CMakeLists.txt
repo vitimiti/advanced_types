@@ -5,7 +5,7 @@ option(ADVANCED_TYPES_INSTALL_LIBRARY "Whether to install the library or not"
 
 project(
   ADVANCED_TYPES
-  VERSION 0.0.1
+  VERSION 1.0.0
   DESCRIPTION "Common pre-processor definitions"
   HOMEPAGE_URL "https://github.com/vitimiti/advanced_types"
   LANGUAGES C CXX)
