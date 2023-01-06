@@ -1,0 +1,4 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/advanced_types-targets.cmake")
+check_required_components("ADVANCED_TYPES")
